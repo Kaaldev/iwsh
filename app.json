@@ -1,6 +1,6 @@
 {
-    "name": "video-dl",
-    "description": "Youtube and Facebook Downloader.",
-    "repository": "https://github.com/mskian/video-dl",
+    "name": "iwsh",
+    "description": "iwsh.",
+    "repository": "kaalDev",
     "keywords": ["node", "express", "static"]
 }
