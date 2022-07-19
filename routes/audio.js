@@ -3,9 +3,6 @@ import ytdl from 'ytdl-core';
 import slugify from 'slugify';
 const router = express.Router();
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Sample URL: http://localhost:4000/audio/audio?url=https://www.youtube.com/watch?v=bKDdT_nyP54  //
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 router.get('/', async (req, res) => {
     try {
@@ -21,7 +18,7 @@ router.get('/', async (req, res) => {
             lower: true,
             strict: false
         });
-        res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
+        res.header('Content-Disposition', `attachment; filename="${title}(www.iwsh.xyz).mp3"`);
         ytdl(url, {
             format: 'mp3',
             filter: 'audioonly',
