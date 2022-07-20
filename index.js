@@ -19,6 +19,17 @@ app.get('/robots.txt', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/robots.txt'));
 });
 
+function formatName(str) {
+  str = slugify(
+    str
+      .replace(/ *\([^)]*\) */g, "")
+      .replace(/ *\\[[^\]]*\) */g, ""))
+        .replace('official', '')
+        .replace('music', '')
+        .replace('video', '');
+  return str;
+}
+
 import home from './routes/home.js';
 import audio from './routes/audio.js';
 import video from './routes/video.js';
