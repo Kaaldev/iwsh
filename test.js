@@ -26,11 +26,12 @@ const YT_VIDEO = "";
         }
         let info = await ytdl.getInfo(url);
         const title = slugify(info.videoDetails.title, {
-            replacement: '-',
+            replacement: '-',new' ',official'',hindi'',punjabi'',
             remove: /[*+~.()'"!:@]/g,
             lower: true,
             strict: false
         });
+        
         console.log(title);
 
     } catch (err) {
