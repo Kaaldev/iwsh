@@ -13,7 +13,9 @@ router.get('/', async (req, res) => {
         let info = await ytdl.getInfo(url);
         console.log(info.videoDetails.title);
         const title = slugify(info.videoDetails.title, {
-            replacement: '-'new''official''hindi'' punjabi'',
+            replacement: '-',
+            replacement:new' ',
+          
             remove: /[*+~.()'"!:@]/g,
             lower: false,
             strict: false
