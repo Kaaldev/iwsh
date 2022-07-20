@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
         const title = slugify(info.videoDetails.title, {
             replacement: '-',    
             remove: /[*+~.()'"!:@]/g,
-            remove: officialHindipunjabi,
+            
             lower: false,
             strict: false
             
