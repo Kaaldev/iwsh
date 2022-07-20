@@ -15,9 +15,9 @@ router.get('/', async (req, res) => {
         const title = slugify(info.videoDetails.title, {
             replacement: '-',
             remove: /[*+~.()'"!:@]/g,
-            remove: new,song,hindi,punjabi,marathi,urdu,2022,bollywood,off
             lower: false,
             strict: false
+            
         });
         res.header('Content-Disposition', `attachment; filename="${title}(www.iwsh.xyz).mp3"`);
         ytdl(url, {
